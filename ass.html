@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigenment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section id="Header-section" class="mb-20">
+        <div class=" lg:grid grid-cols-4 bg-slate-800 ">
+            <div class=" col-span-1">
+
+            </div>
+            <div class="col-span-2 ">
+                <h1 class="font-roboto font-medium	text-5xl font-mono text-red-500 mt-10">Select Your Best Five</h1>
+                <h3 class="text-blue-50 mb-20 mt-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+                    rerum esse architecto qui
+                    consectetur quaerat officiis temporibus totam recusandae alias.</h3>
+
+            </div>
+            <div class="col-span-1">
+                <link rel="stylesheet" href="assign">
+                <img src="messi.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:grid grid-cols-4 gap-5">
+            <div class="box-border h-120 w-120 p-4 border-4 col-span-1 ml-20  ">
+                <div class="size-30 ">
+                    <img class="" src="messi.png " alt="">
+                    <h1 class="mt-3 font-medium">Messi Price for 2024. I am Availavel for play</h1>
+                    <div class="gap-5 ">
+                        <button id="messi-add" class="bg-slate-800 rounded text-blue-50 p-2 mt-2  font-medium">ADD</button>
+                        <button id="messi-mains" class="bg-slate-800 rounded text-blue-50 p-2 mt-2 font-medium">CANCEL</button>
+                    </div>
+                    <h1 class="mt-3 font-medium">$<span id="messi-towk">2000</span></h1>
+                </div>
+            </div>
+            <div class="box-border h-120 w-120 p-4 border-4 col-span-1 ml-20  ">
+                <div class="size-30 ">
+                    <img class="" src="messi.png " alt="">
+                    <h1 class="mt-3 font-medium">Messi Price for 2025. I am Availavel for play</h1>
+                    <div class="gap-5 ">
+                        <button id="messi-add25" class="bg-slate-800 rounded text-blue-50 p-2 mt-2  font-medium">ADD</button>
+                        <button id="messi-mains25" class="bg-slate-800 rounded text-blue-50 p-2 mt-2 font-medium">CANCEL</button>
+                    </div>
+                    <h1 class="mt-3 font-medium">$<span id="messi-towk25"></span>3000</h1>
+                </div>
+            </div>
+            <div class="box-border h-120 w-120 p-4 border-4 col-span-1 ml-20  ">
+                <div class="size-30 ">
+                    <img class="" src="messi.png " alt="">
+                    <h1 class="mt-3 font-medium">Messi Price for 2026. I am Availavel for play</h1>
+                    <div class="gap-5 ">
+                        <button class="bg-slate-800 rounded text-blue-50 p-2 mt-2 font-medium">BUY ME</button>
+                        <button class="bg-slate-800 rounded text-blue-50 p-2 mt-2 font-medium">BUY ME</button>
+                    </div>
+                    <h1 class="mt-3 font-medium">$8000</h1>
+                </div>
+            </div>
+
+
+
+            <div class=" col-span-1 ml-20 mr-5 ">
+                <div class="grid grid-cols-2 gap-2 box-border h-20 w-40 p-4 border-4">
+                    <h1 class="mt-3 font-medium">TOTAL</h1>
+                    <h1 class="mt-3 font-medium"><span id="total-t">00</span></h1>
+                </div>
+                <div class="grid grid-cols-2 gap-2 box-border h-20 w-40 p-4 border-4 mt-5">
+                    <h1 class="mt-3 font-medium">Price</h1>
+                    <h1 class="mt-3 font-medium">$<span id="price-p">00</span></h1>
+                </div>
+                <div class="grid grid-cols-2 gap-2 box-border h-20 w-50 p-4 border-4 mt-5 ">
+                    <h1 class="mt-3 font-medium">BALANCE</h1>
+                    <h1 class="mt-3 font-medium">$<span>10,000</span></h1>
+                </div>
+                <div class="grid grid-cols-2 gap-2 box-border h-20 w-50 p-2 border-4 mt-5 mb-5">
+                    <h1 class="mt-3 font-medium ml-3">TOTAL PRICE</h1>
+                    <h1 class="mt-3 font-medium ml-3">$<span>10,000</span></h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+
+        document.getElementById('messi-add').addEventListener('click', function () {
+            const messii = document.getElementById('messi-towk');
+            const messiFieldString = messii.innerText;
+            const messiField = parseInt(messiFieldString);
+
+            const total = document.getElementById('price-p');
+            const totalFieldString = total.innerText;
+            const totalField = parseInt(totalFieldString);
+
+            const totalmessiPrice = totalField + messiField;
+            total.innerText = totalmessiPrice;
+        })
+
+        document.getElementById('messi-add25').addEventListener('click', function () {
+            const messii = document.getElementById('messi-towk25');
+            const messiFieldString = messii.innerText;
+            const messiField = parseInt(messiFieldString);
+
+            const total = document.getElementById('price-p');
+            const totalFieldString = total.innerText;
+            const totalField = parseInt(totalFieldString);
+
+            const totalmessiPrice = totalField + messiField;
+            total.innerText = totalmessiPrice;
+        })
+
+        document.getElementById('messi-mains').addEventListener('click', function () {
+            const messii = document.getElementById('messi-towk');
+            const messiFieldString = messii.innerText;
+            const messiField = parseInt(messiFieldString);
+
+            const total = document.getElementById('price-p');
+            const totalFieldString = total.innerText;
+            const totalField = parseInt(totalFieldString);
+
+            const totalmessiPrice = totalField - messiField;
+            total.innerText = totalmessiPrice;
+
+        })
+
+        document.getElementById('messi-add').addEventListener('click', function () {
+            const priceField = document.getElementById('total-t');
+            const priceFieldString = priceField.innerText;
+            const priceFieldNew = parseInt(priceFieldString);
+
+            const newPriceField = priceFieldNew + 1;
+            priceField.innerText = newPriceField;
+        
+        })
+        document.getElementById('messi-add25').addEventListener('click', function () {
+            const priceField = document.getElementById('total-t');
+            const priceFieldString = priceField.innerText;
+            const priceFieldNew = parseInt(priceFieldString);
+
+            const newPriceField = priceFieldNew + 1;
+            priceField.innerText = newPriceField;
+        
+        })
+
+        document.getElementById('messi-mains').addEventListener('click', function () {
+            const priceField = document.getElementById('total-t');
+            const priceFieldString = priceField.innerText;
+            const priceFieldNew = parseInt(priceFieldString);
+
+            const newPriceField = priceFieldNew - 1;
+            priceField.innerText = newPriceField;
+        
+        })
+        document.getElementById('messi-mains25').addEventListener('click', function () {
+            const priceField = document.getElementById('total-t');
+            const priceFieldString = priceField.innerText;
+            const priceFieldNew = parseInt(priceFieldString);
+
+            const newPriceField = priceFieldNew - 1;
+            priceField.innerText = newPriceField;
+        
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>
